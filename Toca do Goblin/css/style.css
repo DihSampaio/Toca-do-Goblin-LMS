@@ -1,0 +1,239 @@
+/* --- IMPORTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* --- GERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- PLACEHOLDER --- */
+::placeholder {
+    font-size: 12px;
+    font-style: italic;
+    color: #52435E; 
+}
+
+/* --- HEADER --- */
+.header-menu{
+    width: 100vw;
+    height: 65px;
+    background-color: #52435E;
+    box-shadow: 0px 2px 5px 0px rgba(20, 20, 20, 0.3);
+}
+
+/* |--> NAV */
+nav {
+    width: 100%;
+    height: 100%;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+/* |-> LOGO */
+.logo {
+    transform: translate(0px, 10px) rotate(-7deg);
+}
+
+/* |-> LINKS */
+.links ul {
+    display: flex;
+    align-items: center;
+}
+.links ul a li {
+    margin: 0px 25px;
+    display: inline-block;
+    color: #FFF;
+    cursor: pointer;
+}
+#link-text:hover {
+    color: #49B875;
+    border-bottom: 2px solid #49B875;
+}
+#link-img:hover {
+    transform: rotate(-30deg);
+    transition: 0.3s;
+}
+
+/* --- MAIN --- */
+main {
+    width: 100vw;
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* |--> CONTENT */
+.row-1 {
+    width: 43%;
+    height: 95%;
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    
+}
+
+/* |-> ARTICLES */
+.row-2, .row-3 {
+    height: 45%;
+    margin: 15px;
+    padding: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+}
+.row-3 {
+    height: 95% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-article {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    color: #49B875;
+    border-bottom: 1px solid #52435E;
+}
+
+/* |> SECTIONS */
+.text-article {
+    padding: 7px;
+    font-size: 13px;
+    text-align: justify;
+}
+.text-article a {
+    text-decoration: none;
+}
+.img-article img {
+    max-width: 170px;
+    margin-top: 20px;
+    transform: rotate(20deg);
+}
+span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #49B875;
+}
+a span:hover {
+    color: #52435E;
+    font-style: italic;
+}
+#structure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form {
+    margin-top: 20px;
+    border-top: 1px solid #52435E;
+}
+
+/* |> TABLE */
+table {
+    width: 90%;
+    
+}
+#table-class, #table-races {
+    padding: 4px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFF;
+    border-radius: 3px;
+    background-color: #52435E;
+}
+#table-races {
+    width: 100px;
+    color: #52435E !important;
+    font-weight: 500 !important;
+    background-color: #52FF96;
+}
+tbody tr td {
+    padding: 1px 5px;
+    font-weight: 600;
+    color: #52435E;
+    border-radius: 2px;
+    border-bottom: 1px solid #49B875;
+    background-color: #f9f9f9;
+}
+#class {
+    background-color: #e9e9e9;
+}
+
+/* |> FORM */
+.text-article form span {
+    font-size: 13px;
+    color: #52435E;
+}
+.text-article input {
+    margin-right: 20px;
+    padding: 3px;
+    border: 1px solid #49B875;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    color: #52435E;
+}
+.part-form {
+    margin-bottom: 15px;
+}
+#example-name {
+    font-style: italic;
+    background-color: #e9e9e9;
+}
+#part-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#part-radio {
+    width: auto;
+    position: relative;
+    right: 0px;
+    bottom: -10px;
+}
+#part-radio input[type="radio"] {
+    height: 10px;
+}
+#part-check {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    color: #52435E;
+}
+#part-check input[type="checkbox"] {
+    height: 10px;
+    margin-right: 2px;
+}
+
+/* |> BUTTON */
+#button {
+    display: flex;
+    justify-content: center;
+}
+.text-article input[type="submit"] {
+    padding: 5px 20px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: #fff;
+    background-color: #52435E;
+}
+.text-article input[type="submit"]:hover {
+    background-color: #49B875;
+    transition: 0.15s;
+}
